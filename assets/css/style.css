@@ -193,8 +193,9 @@ nav ul li span.nav_updated-ribbon {
 }
 
 /* ### Navigation Sub Menu */
-nav ul li:first-child:hover > .sub_menu {
-  display: block;
+nav ul li:first-child:hover > .sub_menu{
+  z-index: 1;
+  opacity: 1;
   transition: 0.3s all linear;
 }
 .sub_menu {
@@ -203,15 +204,16 @@ nav ul li:first-child:hover > .sub_menu {
   top: -14px;
   right: 0px;
   transform: translate(50%, 21%);
-  z-index: 1;
+  z-index: 0;
   background-color: #fff;
   padding: 40px 12px;
   transition: 0.3s all linear;
-  display: none;
+  opacity: 0;
 }
-.sub_menu:hover {
+.sub_menu:hover .sub_menu{
   display: block;
 }
+
 .sub_menu h4 {
   color: var(--secondary-color);
   margin-bottom: 30px;
@@ -230,6 +232,11 @@ nav ul li:first-child:hover > .sub_menu {
 .sub_menu ul li a:hover{
   border: unset;
   padding: unset
+}
+.sub_menu i {
+  color: var(--secondary-color);
+  font-size: 16px;
+  padding-right: 10px;
 }
 /* Banner */
 #banner {
