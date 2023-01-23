@@ -1,14 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Custom Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>SensoScientific</title>
 </head>
+
 <body>
-    
+    <header>
+        <!-- Top Header -->
+        <div class="top_header">
+            <div class="top_header-container container">
+                <!-- Header Details -->
+                <div class="top_header_details">
+                    <div class="top_header_mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:salesinfo@sensoscientific.com" target="_blank"
+                            rel="noopener noreferrer">salesinfo@sensoscientific.com</a>
+                    </div>
+                    <div class="top_header_number">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+18002793101" rel="noopener noreferrer">800-279-3101</a>
+                    </div>
+                </div>
+                <div class="top_header_right">
+                    <a href="#" rel="noopener noreferrer" class="th_login">Client login</a>
+                    <form action="" method="get" id="top_header_form">
+                        <button type="submit" class="th_search_icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <label for="top_header_search">Search</label>
+                        <input type="search" id="top_header_search" placeholder="Search for products" />
+                    </form>
+                    <a href="#" class="th_quote" rel="noopener noreferrer">Request Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main_header">
+            <div class="main_header_container container">
+                <div class="main_header_col">
+                    <!-- Main Logo -->
+                    <div class="main_logo">
+                        <a href="index.html" rel="noopener noreferrer">
+                            <img src="assets/images/logos/sensoscientific-logoblue.svg" alt="sensoscientific"
+                                loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="main_header_details">
+                        <a href="mailto:salesinfo@sensoscientific.com" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="tel:+18002793101" rel="noopener noreferrer"></a>
+                    </div>
+                    <div class="humburger_menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <!-- Nav Links -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="" rel="noopener noreferrer">Products <i class="fa-solid fa-angle-down"></i></a>
+                            <span class="nav_updated-ribbon">
+                                <img src="assets/images/updated-ribbon.png" alt="Updated" loading="lazy" />
+                            </span>
+                            <div class="sub_menu">
+                                <h4>BY PARAMETERS</h4>
+                                <ul>
+                                    <li>
+                                        <a href="" rel="noopener noreferrer">Temperature</a>
+                                    </li>
+                                    <li>
+                                        <a href="" rel="noopener noreferrer">Humidity</a>
+                                    </li>
+                                    <li>
+                                        <a href="" rel="noopener noreferrer">Differential Pressure</a>
+                                    </li>
+                                    <li>
+                                        <a href="" rel="noopener noreferrer">Carbon Dioxide</a>
+                                    </li>
+                                    <li>
+                                        <a href="" rel="noopener noreferrer">Oxygen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">Applications <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">Technology <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">Services <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">About Us <i class="fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="" rel="noopener noreferrer">Blog</a>
+                        </li>
+                        <!-- <li class="header_login">
+                            <a href="" rel="noopener noreferrer">Client login</a>
+                        </li>
+                        <li class="header_quote">
+                            <a href="" rel="noopener noreferrer">Request Quote</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section id="banner">
+            <div class="banner_container container">
+                <h1>The Authority in Compliance Automation
+                </h1>
+                <p>Automate meeting temperature, humidity, differential pressure, and more compliance standards with
+                    24/7 real-time continuous monitoring & alert notifications.
+                </p>
+                <a href="#" class="cta-btn1" rel="noopener noreferrer">CTA Button 01</a>
+                <a href="#" class="cta-btn2" rel="noopener noreferrer">CTA Button 02</a>
+            </div>
+        </section>
+
+        <!-- Certification -->
+        <section id="certification">
+            <div class="certification_container container">
+                <ul>
+                    <li><img src="assets/images/certification/a2la.png" alt="a2la accredited" loading="lazy" /></li>
+                    <li><img src="assets/images/certification/cdc.png" alt="CDC" loading="lazy" /></li>
+                    <li><img src="assets/images/certification/fda-21_cfr-part11.png" alt="FDA 21 CFR Part 11"
+                            loading="lazy" /></li>
+                    <li><img src="assets/images/certification/ilac-mra.png" alt="ilac MRA" loading="lazy" /></li>
+                    <li><img src="assets/images/certification/iso-iec-2017.png" alt="ISO IEC 2017" loading="lazy" />
+                    </li>
+                    <li><img src="assets/images/certification/iso-iec-9001.png" alt="ISO IEC 9001" loading="lazy" />
+                    </li>
+                    <li><img src="assets/images/certification/nist.png" alt="NIST" loading="lazy" /></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Trusted by -->
+        <section id="trusted_by">
+            <div class="trustedby-container container">
+                <h2>Trusted By</h2>
+                <ul>
+                    <li><img src="assets/images/trusted-by/costco.png" alt="Costco" loading="lazy" /></li>
+                    <li><img src="assets/images/trusted-by/vermont.webp" alt="vermont" loading="lazy" /></li>
+                    <li><img src="assets/images/trusted-by/pennstate-hershey.png" alt="PennState Hershey"
+                            loading="lazy" /></li>
+                    <li><img src="assets/images/trusted-by/quest-diagnostics.png" alt="QuestDiagnostics"
+                            loading="lazy" /></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Platform Solution -->
+        <section id="platform_solution">
+            <div class="platform_solution-container container">
+                <h2>Platform Solution</h2>
+                <div class="sub-ghz">
+                    <div class="sub-ghz_container">
+                        <h3>Sub Ghz</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. sed do elusmod tempor incididunt ut
+                            labore ut dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="platform-solution-col">
+                    <div class="wifi">
+                        <div class="wifi_container">
+                            <h3>Wi-fi</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. sed do elusmod tempor
+                                incididunt ut
+                                labore ut dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="cellular">
+                        <div class="cellular_container">
+                            <h3>Cellular</h3>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. sed do elusmod tempor
+                                incididunt ut
+                                labore ut dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The SensoScientific Difference -->
+        <section id="sensoscientific">
+            <div class="sensoscientific_container container">
+                <h2>The SensoScientific Difference</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aenea leo urna, maximus in vulputate sit amet
+                    parta sed ipsum. Lorem ipsum dolor sit amet, consectetur adispisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+
+                <div class="sensoscientific_col">
+                    <!-- superior Technology -->
+                    <div class="superior sensoscientific_row">
+                        <div class="superior_icon sensoscientific_row-icon">
+                            <img src="assets/images/sensoscientific/superior-technology.png" alt="Superior Technology"
+                                loading="lazy" />
+                        </div>
+                        <div class="superior_detail sensoscientific_row-details">
+                            <h3>Superior Technology</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!-- expert technical support -->
+                    <div class="expert sensoscientific_row">
+                        <div class="expert_icon sensoscientific_row-icon">
+                            <img src="assets/images/sensoscientific/support.png" alt="expert technical support"
+                                loading="lazy" />
+                        </div>
+                        <div class="expert_detail sensoscientific_row-details">
+                            <h3>Expert Technical Support</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Lowest cost of ownership -->
+                    <div class="lowest-cost sensoscientific_row">
+                        <div class="lowest_cost-icon sensoscientific_row-icon">
+                            <img src="assets/images/sensoscientific/low-cost.png" alt="Lowest cost of ownership"
+                                loading="lazy" />
+                        </div>
+                        <div class="lowest_cost-detail sensoscientific_row-details ">
+                            <h3>Lowest Cost Of Ownership</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News and Update -->
+        <section id="news_and-update">
+            <div class="news_and_updated-container container">
+                <div class="news_and_updated-details">
+                    <h3>Get the Lates News and Update</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicuing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.</p>
+                </div>
+                <div class="news_and_updated-form">
+                    <form action="" method="get">
+                        <label for="newsletter_email">Email</label>
+                        <input type="email" name="email" id="newsletter_email" placeholder="Your email address" />
+                        <input type="submit" value="Subscribe" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awarded Supplier for Major GPOs -->
+        <section id="awared">
+            <div class="awared_container container">
+                <h2>Awarded Supplier for Major GPOs</h2>
+                <p>Lorem ipusm dolor sit amet, consectetur adipiscing elit. Aenean leo urna, maximus in vulputate sit
+                    amet.</p>
+                <div class="contact_us-btn">
+                    <a href="" rel="noopener noreferrer" class="contact-us"> Contact Us</a>
+                </div>
+                <div class="awared_icons">
+                    <img src="assets/images/awared/vizient.png" alt="vizient" loading="lazy" class="vizient" />
+                    <img src="assets/images/awared/mckesson.png" alt="mckesson" loading="lazy" class="mckesson" />
+                    <img src="assets/images/awared/intalere.png" alt="intalere" loading="lazy" class="intalere" />
+                    <img src="assets/images/awared/asembia.png" alt="asembia" loading="lazy" class="asembia" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Automate Meeting Regulatory Compliance -->
+        <section id="automate-meeting">
+            <div class="automate-meeting_container container">
+                <h2>Automate Meeting Regulatory Compliance</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aenean leo urna, maximus in vulputate sit
+                    amet, porta sed ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua</p>
+                <div class="automate_blocks">
+                    <div class="automate_block1 automate_block">
+                        <img src="assets/images/automate-meeting/calibration-icon.svg" alt="calibration"
+                            loading="lazy" />
+                        <div class="automate_block_details">
+                            <h3>A2LA Accredited Calibration</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem i</p>
+                        </div>
+                    </div>
+                    <div class="automate_block2 automate_block">
+                        <img src="assets/images/automate-meeting/mapping-icon.svg" alt="mapping" loading="lazy" />
+                        <div class="automate_block_details">
+                            <h3>Mapping Validation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem i</p>
+                        </div>
+                    </div>
+                    <div class="automate_block3 automate_block">
+                        <img src="assets/images/automate-meeting/validation-icon.svg" alt="validation" loading="lazy" />
+                        <div class="automate_block_details">
+                            <h3>IQ OQ PQ Validation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem i</p>
+                        </div>
+                    </div>
+                    <div class="automate_block4 automate_block">
+                        <img src="assets/images/automate-meeting/cloud-icon.svg" alt="cloud" loading="lazy" />
+                        <div class="automate_block_details">
+                            <h3>SensoScientific Validated Cloud</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem i</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section id="case_studies">
+            <h2>Case Studies</h2>
+            <div class="case_studies_image_with-text">
+                <div class="case_studies-row">
+                    <h4>Application Category</h4>
+                    <p><span>Lipsum dolor sit amet consectetur adipisicing</span> Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Aenean leo urna, maximus in vulputate sit amet, porta sed
+                        ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <p> Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Aenean leo urna, maximus in
+                        vulputate sit amet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Customer Stories -->
+        <section id="more_customer-stories">
+            <div class="more_custormer-stories-container container">
+                <ul>
+                    <li><img src="assets/images/more-customer-stories/costco-logo.png" alt="Costco" loading="lazy" />
+                    </li>
+                    <li><img src="assets/images/more-customer-stories/vermont.png" alt="vermont" loading="lazy" /></li>
+                    <li><img src="assets/images/more-customer-stories/pennstate-hershey.png" alt="PennState Hershey"
+                            loading="lazy" /></li>
+                    <li><img src="assets/images/more-customer-stories/questdiagnostics.png" alt="QuestDiagnostics"
+                            loading="lazy" /></li>
+                    <li class="more-customer-btn"><a href="" rel="noopener noreferrer">More Customer Stories</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Request Quote & Automation Expert -->
+        <section id="form-and-expert">
+            <div class="form_and_expert-container container">
+                <!-- Form -->
+                <div class="request_quote">
+                    <form action="" method="post">
+                        <h3>Request Quote</h3>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first name" id="first-name" placeholder="First Name" />
+
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last name" id="last-name" placeholder="Last Name" />
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                        <label for="submit-btn">Submit</label>
+                        <input type="submit" id="submit-btn" value="Get a Quote" />
+                    </form>
+                </div>
+
+                <!-- Details -->
+                <div class="automation_expert">
+                    <h3>Automation Expert</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <div class="automation_expert_col">
+                        <div class="automation_expert_row">
+                            <div class="ae_row a2ala">
+                                <img src="assets/images/automation_expert/certified-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>A2LA Accredited & NIST Traceable Calibration</h4>
+                            </div>
+                            <div class="ae_row government-grade">
+                                <img src="assets/images/automation_expert/security-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>Government-Grade Security</h4>
+                            </div>
+                            <div class="ae_row fda-cfr">
+
+                                <img src="assets/images/automation_expert/cloud-validate-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>FDA CFR 21 Part 11 Validated Cloud</h4>
+                            </div>
+                        </div>
+                        <div class="automation_expert_row">
+                            <div class="ae_row enterprise">
+                                <img src="assets/images/automation_expert/growth-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>Enterprise Scalability</h4>
+                            </div>
+                            <div class="ae_row products_designed">
+                                <img src="assets/images/automation_expert/analytic-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>Products Designed to Exceed Compliance</h4>
+                            </div>
+                            <div class="ae_row expert_technical">
+                                <img src="assets/images/automation_expert/support-icon.svg" alt="analytic"
+                                    loading="lazy" />
+                                <h4>Expert Technical Support</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer-top">
+                <div class="footer_container container">
+                    <div class="footer_col-left">
+                        <div class="footer_logo">
+                            <img src="assets/images/logos/sensoscientific-logowhite.svg" alt="" loading="lazy" />
+                        </div>
+                        <div class="footer_details">
+                            <div class="footer_mail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:salesinfo@sensoscientific.com" target="_blank"
+                                    rel="noopener noreferrer">salesinfo@sensoscientific.com</a>
+                            </div>
+                            <div class="footer_number">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+18002793101" rel="noopener noreferrer">800-279-3101</a>
+                            </div>
+                            <div class="footer_location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="" rel="noopener noreferrer">685 Cochran St.Suite #200 Sim</a>
+                            </div>
+                            <div class="footer_social-media">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_col-right">
+
+                        <div class="footer_col-right-rows footer_col-right-row1">
+                            <h4>Product</h4>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Temperature</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Humidity</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Differential Pressure</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">View All</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col-right-rows footer_col-right-row2">
+                            <h4>Industries</h4>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Hospital and Healthcare</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Pharmacy</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Pharmaceutical</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Food Safety</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">In-Transit</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col-right-rows footer_col-right-row3">
+                            <h4>Sensoscientific</h4>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">About us</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">careers</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">certifications</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">privacy policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col-right-rows footer_col-right-row4">
+                            <h4>Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">AZLA Accredited</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Calibration services</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">IQ QC PQ Validation</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Mapping Validation</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">SensoCal On-Site</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Calibration Service</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">CareFree++</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Training</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer_col-right-rows footer_col-right-row5">
+                            <h4>Technology</h4>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">SensoScientific validation
+                                        cloud</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Over the Air Upgrades</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Sub GHz Long Range 900 MHz</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">Wi-Fi Technology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- certification -->
+            <div id="footer_certification">
+                <div class="footer_certification-container container">
+                    <ul>
+                        <li><img src="assets/images/certification/a2la.png" alt="a2la accredited" loading="lazy"></li>
+                        <li><img src="assets/images/certification/cdc.png" alt="CDC" loading="lazy"></li>
+                        <li><img src="assets/images/certification/fda-21_cfr-part11.png" alt="FDA 21 CFR Part 11"
+                                loading="lazy"></li>
+                        <li><img src="assets/images/certification/ilac-mra.png" alt="ilac MRA" loading="lazy"></li>
+                        <li><img src="assets/images/certification/iso-iec-2017.png" alt="ISO IEC 2017" loading="lazy">
+                        </li>
+                        <li><img src="assets/images/certification/iso-iec-9001.png" alt="ISO IEC 9001" loading="lazy">
+                        </li>
+                        <li><img src="assets/images/certification/nist.png" alt="NIST" loading="lazy"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer_copyright">
+                <p>&copy; 2015-2023 <a href="" target="_blank" rel="noopener noreferrer">SensoScientific</a>, Inc. All
+                    Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
