@@ -193,6 +193,9 @@ nav ul li span.nav_updated-ribbon {
 }
 
 /* ### Navigation Sub Menu */
+.sub_menu_container {
+  display: flex;
+}
 nav ul li:first-child:hover > .sub_menu{
   z-index: 1;
   opacity: 1;
@@ -221,6 +224,7 @@ nav ul li:first-child:hover > .sub_menu{
 .sub_menu ul {
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
 
 }
 .sub_menu ul li {
@@ -238,6 +242,7 @@ nav ul li:first-child:hover > .sub_menu{
   font-size: 16px;
   padding-right: 10px;
 }
+
 /* Banner */
 #banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
