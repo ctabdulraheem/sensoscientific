@@ -191,7 +191,9 @@ nav ul li span.nav_updated-ribbon {
   right: 0px;
   bottom: 15px;
 }
-
+.header_login, .header_quote{
+  display: none;
+}
 /* ### Navigation Sub Menu */
 .sub_menu_container {
   display: flex;
@@ -205,7 +207,7 @@ nav ul li:first-child:hover > .sub_menu {
 .sub_menu {
   width: 80vw;
   position: absolute;
-  top: -14px;
+  top: -20px;
   right: 0px;
   transform: translate(50%, 21%);
   z-index: 0;
@@ -247,15 +249,13 @@ nav ul li:first-child:hover > .sub_menu {
 .sub_menu_rowlinks .new_updated {
   text-transform: uppercase;
   color: #60a8e5;
-  font-size: .875rem;
+  font-size: 0.875rem;
   margin-left: 10px;
 }
 .sub_menu_rowlinks .view_all a {
   color: var(--secondary-color);
   font-weight: 700;
 }
-
-
 
 /* Banner */
 #banner {
@@ -269,11 +269,12 @@ nav ul li:first-child:hover > .sub_menu {
   position: relative;
 }
 #banner .banner_container {
+  display: flex;
+  align-items: center;
+  min-height: inherit;
+}
+.banner_content {
   width: 800px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  transform: translate(-50%, 50%);
 }
 
 #banner .banner_container h1 {
@@ -291,9 +292,9 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #banner .banner_container a {
   font-family: var(--kumbh_sans);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 20px 25px;
+  padding: 15px 30px;
   display: inline-block;
   margin-top: 23px;
 }
@@ -320,13 +321,10 @@ nav ul li:first-child:hover > .sub_menu {
   background-color: #e1effa;
   padding: 30px 0px;
 }
-#certification .certification_container {
-  width: 80%;
-  margin: 0 auto;
-}
+
 #certification ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #certification ul li:first-child img {
@@ -372,7 +370,7 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #trusted_by ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 41px;
 }
@@ -404,9 +402,11 @@ nav ul li:first-child:hover > .sub_menu {
 #platform_solution .sub-ghz {
   background-image: url("../images/platform-solution/sub-ghz.webp");
   background-repeat: no-repeat;
-  height: 350px;
   position: relative;
+  padding: 80px 0px 80px;
   margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
 }
 #platform_solution .sub-ghz p:nth-child(2) {
   color: var(--heading-color);
@@ -442,7 +442,7 @@ nav ul li:first-child:hover > .sub_menu {
   background-image: url("../images/platform-solution/wifi.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 280px;
   margin-right: 25px;
 }
 
@@ -451,7 +451,7 @@ nav ul li:first-child:hover > .sub_menu {
   background-image: url("../images/platform-solution/cellular.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 280px;
 }
 #platform_solution .wifi_container,
 .cellular_container {
@@ -460,7 +460,7 @@ nav ul li:first-child:hover > .sub_menu {
   justify-content: center;
   width: 90%;
   height: inherit;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 /* the SensoScientific Difference */
@@ -488,7 +488,8 @@ nav ul li:first-child:hover > .sub_menu {
   display: flex;
 }
 #sensoscientific .sensoscientific_row .sensoscientific_row-details {
-  padding-left: 25px;
+  padding-left: 20px;
+  padding-right: 25px;
 }
 #sensoscientific .sensoscientific_row .sensoscientific_row-details h3 {
   font-size: 21px;
@@ -497,6 +498,7 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #sensoscientific .sensoscientific_row-details p {
   text-align: left;
+  font-size: 16px;
 }
 /* ###superior_icon */
 #sensoscientific .superior_icon img {
@@ -695,14 +697,14 @@ nav ul li:first-child:hover > .sub_menu {
   background-image: url(../images/case-study.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+  /* height: 350px; */
 }
 #case_studies .case_studies-row {
   width: 50%;
   background-color: #0000007d;
   height: inherit;
   margin-left: auto;
-  padding: 30px 0px 0px 15px;
+  padding: 35px 0px 70px 20px;
 }
 #case_studies .case_studies-row h4 {
   font-size: 18px;
@@ -731,7 +733,7 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #more_customer-stories .more_custormer-stories-container ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #more_customer-stories ul li:nth-child(1) img {
@@ -772,7 +774,7 @@ nav ul li:first-child:hover > .sub_menu {
 }
 /* Request Quote & Automation Expert */
 #form-and-expert {
-  margin: 40px 0px 80px;
+  padding: 80px 0px 80px;
 }
 
 #form-and-expert .form_and_expert-container {
@@ -781,7 +783,7 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #form-and-expert .request_quote {
   background-color: #3892df;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 20px;
 }
 #form-and-expert .request_quote form {
   background-color: unset;
@@ -802,8 +804,7 @@ nav ul li:first-child:hover > .sub_menu {
   color: #fff;
   font-family: var(--kumbh_sans);
   font-size: 18px;
-  padding: 12px 15px;
-  margin-right: 15px;
+  padding: 15px 15px;
   margin-bottom: 25px;
   border: none;
   border-radius: 5px;
@@ -814,6 +815,9 @@ nav ul li:first-child:hover > .sub_menu {
 }
 #form-and-expert .request_quote form input::placeholder {
   color: #fff;
+}
+#form-and-expert .request_quote form input#first-name {
+  margin-right: 15px;
 }
 #form-and-expert .request_quote form input#email,
 #form-and-expert .request_quote form input#subject,
@@ -854,7 +858,7 @@ nav ul li:first-child:hover > .sub_menu {
 #form-and-expert .automation_expert_col h4 {
   font-size: 15px;
   font-weight: 600;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 #form-and-expert .automation_expert_col .ae_row {
   display: flex;
@@ -865,31 +869,31 @@ nav ul li:first-child:hover > .sub_menu {
   margin-right: 20px;
 }
 #form-and-expert .automation_expert_col .a2ala img {
-  width: 50px;
-  height: 66px;
+  width: 40px;
+  height: 53px;
 }
 #form-and-expert .automation_expert_col .government-grade img {
-  width: 50px;
-  height: 63px;
+  width: 40px;
+  height: 50px;
 }
 #form-and-expert .automation_expert_col .fda-cfr img {
-  width: 50px;
-  height: 38px;
+  width: 42px;
+  height: 32px;
 }
 #form-and-expert .automation_expert_col .enterprise img {
-  width: 50px;
-  height: 33px;
+  width: 40px;
+  height: 26px;
 }
 #form-and-expert .automation_expert_col .products_designed img {
-  width: 50px;
-  height: 56px;
+  width: 40px;
+  height: 46px;
 }
 #form-and-expert .automation_expert_col .products_designed {
   margin-top: 60px;
 }
 #form-and-expert .automation_expert_col .expert_technical img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Footer */
@@ -906,7 +910,9 @@ footer #footer-top {
   width: 40%;
   margin-right: 20px;
 }
-
+.footer_social-media {
+  padding-top: 15px;
+}
 /* ###Footer Logo */
 #footer-top .footer_col-left .footer_logo {
   margin-bottom: 40px;
@@ -948,13 +954,14 @@ footer #footer-top {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
-
+#footer-top .footer_col-right .footer_col-right-rows ul li  {
+  padding-bottom: 10px;
+}
 #footer-top .footer_col-right .footer_col-right-rows ul li a {
   color: #fff;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* ##footer certification */
